@@ -13,8 +13,11 @@ public class fizzBuzzWhizzTest {
         String actual;
         //when
         fizzBuzzWhizz fbz =new fizzBuzzWhizz();
-        actual=fbz.play();
+        actual=fbz.play(number);
         //then
         Assertions.assertEquals("1",actual);
     }
+
+
+
 }
