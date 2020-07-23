@@ -60,4 +60,18 @@ public class fizzBuzzWhizzTest {
         assertEquals("Whizz",actual);
     }
 
+    @Test
+    void should_FizzBuzzWhizz_when_fizzBuzzWhizz_play_given_105() {
+        //given
+        int number =105;
+        String actual;
+
+        //when
+        fizzBuzzWhizz fbz =new fizzBuzzWhizz();
+        actual=fbz.play(number);
+
+        //then
+        assertEquals("FizzBuzzWhizz",actual);
+    }
+
 }
