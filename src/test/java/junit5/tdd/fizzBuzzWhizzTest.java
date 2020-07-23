@@ -21,7 +21,7 @@ public class fizzBuzzWhizzTest {
     }
 
     @Test
-    void should_3_when_fizzBuzzWhizz_play_given_Fizz() {
+    void should_Fizz_when_fizzBuzzWhizz_play_given_3() {
         //given
         int number =3;
         String actual;
@@ -29,7 +29,21 @@ public class fizzBuzzWhizzTest {
         fizzBuzzWhizz fbz =new fizzBuzzWhizz();
         actual=fbz.play(number);
         //then
-        Assertions.assertEquals("Fizz",actual);
+        assertEquals("Fizz",actual);
+    }
+
+    @Test
+    void should_Buzz_when_fizzBuzzWhizz_play_given_5() {
+        //given
+        int number =5;
+        String actual;
+
+        //when
+        fizzBuzzWhizz fbz =new fizzBuzzWhizz();
+        actual=fbz.play(number);
+
+        //then
+        assertEquals("Buzz",actual);
     }
 
 }
