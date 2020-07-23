@@ -3,6 +3,8 @@ package junit5.tdd;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class fizzBuzzWhizzTest {
 
 
@@ -15,9 +17,19 @@ public class fizzBuzzWhizzTest {
         fizzBuzzWhizz fbz =new fizzBuzzWhizz();
         actual=fbz.play(number);
         //then
-        Assertions.assertEquals("1",actual);
+        assertEquals("1",actual);
     }
 
-
+    @Test
+    void should_3_when_fizzBuzzWhizz_play_given_Fizz() {
+        //given
+        int number =3;
+        String actual;
+        //when
+        fizzBuzzWhizz fbz =new fizzBuzzWhizz();
+        actual=fbz.play(number);
+        //then
+        Assertions.assertEquals("Fizz",actual);
+    }
 
 }
