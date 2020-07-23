@@ -5,6 +5,8 @@ public class fizzBuzzWhizz {
          String result ="";
          if (number%3==0){
              result+="Fizz";
+         }else if(number%5==0){
+             result+="Buzz";
          }
 
         if (result.equals("")) {
