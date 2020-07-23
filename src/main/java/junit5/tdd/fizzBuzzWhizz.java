@@ -3,7 +3,8 @@ package junit5.tdd;
 public class fizzBuzzWhizz {
     public String play(int number){
          String result ="";
-         if (number%3==0){
+
+         if (number % 3 == 0) {
              result+="Fizz";
          }
          if(number%5==0){
